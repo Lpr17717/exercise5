@@ -7,15 +7,84 @@ const { pageTitle } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pro2styles.css">
+    <link rel="icon" type ="image/svg+xml" href="favicon.ico" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <meta name="generator" content = {Astro.generator} >
+    <title>Interest News: Home</title>
   </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
-    <slot />
-    <Footer />
-  </body>
+
+<header class="top-nav">
+
+<div><a id="logo" href="index.html"rel="nav"><img src="src/pages/imgspro2/InterestNewsLogo.svg" alt="Interest News Logo"></a>
+</div>
+<button><img id="toggle-nav" src="src/pages/imgspro2/menuicon.svg" alt="hamburger"></button>
+<div><a id='logged-in' href="logout.html">Logout</a></div>
+</header>
+
+<body class="">
+
+<div class="search-container"><form action="/action_page.php">
+<input type="text" placeholder="Search.." name="search">
+<button id='search' type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
+<main>
+<nav>
+<ul>
+<li><a href="health.html"rel="nav">Health</a></li>
+<li><a href="business.html"rel="nav">Business</a></li>
+<li><a href="transportation.html"rel="nav">Transportation</a></li>
+<li><a href="politics.html"rel="nav">Politics</a></li>
+<li><a href="education.html"rel="nav">Education</a></li>
+<li><a id='logout' href="logout.html"rel="nav">Logout</a></li>
+</ul>
+</nav>
+</main>
+
+
+<div>
+<h1>Featured News</h1>
+</div>
+
+<div class="content">
+<a href="articlepage.html">
+<img class="images" src="src/pages/imgspro2/melindaunsplash.webp" alt="Bankruptcy Image">
+</a>
+<article>
+<a href="articlepage.html">
+<h2>Business “Final-ly” went bankrupt</h2>
+</a>
+Final-ly, a once-promising startup
+that aimed to disrupt the funeral industry,
+has filed for bankruptcy. The company,
+which launched just three years ago, had raised
+over $10 million in funding and had garnered
+significant attention in the tech world.
+<div><a href="articlepage.html">Read More</a></div>
+</article>
+</div>
+
+<div class="content">
+  <a href="articlepage.html">
+  <img class="images" src="src/pages/imgspro2/priscillaunsplash.webp" alt="Apple Image">
+  </a>
+  <article>
+  <a href="articlepage.html">
+  <h2>One apple can keep the doctor away for 2 days, studies show</h2>
+  </a>
+  According to recent studies,
+  eating an apple a day may have
+  a variety of health benefits.
+  Apples are high in fiber, vitamins,
+  and antioxidants, which can contribute
+  to overall health and wellbeing.
+  <div><a href="articlepage.html">Read More</a></div>
+  </article>
+  </div>
+  <script src="../scripts/nav.js"></script>
+  
+</body>
 </html>
