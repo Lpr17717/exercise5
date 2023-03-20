@@ -1,0 +1,93 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+const pageTitle = "Article";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type ="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content = {Astro.generator} >
+    <title>InterestNews: {pageTitle}</title>
+  </head>
+
+<header class="top-nav">
+ 
+      <div><a id="logo" href="index.html"rel="nav"><img src="../InterestNewsLogo.svg" alt="Interest News Logo"></a>
+      </div>
+      <button><img id="toggle-nav" src="../menuicon.svg" alt="hamburger"></button>
+      <div><a id='logged-in' href="logout.html">Logout</a></div>
+    </header>
+  <body class="">
+
+    <div class="search-container"><form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+      <Navigation/>
+
+  <div>
+  <h2 id='single'>Business 'Final-ly' went Bankrupt</h2>
+  </div>
+  <div id='author'>
+<div>by Mary Murdock</div>
+<div>May 26th, 2019</div>
+<div><a href=`${import.meta.env.BASE_URL}comments`>279 Comments</a>
+</div>
+
+<div class='onepage'>
+    <article>Final-ly, a once-promising startup
+        that aimed to disrupt the funeral
+        industry, has filed for bankruptcy.
+        The company, which launched just three
+        years ago, had raised over $10 million
+        in funding and had garnered significant
+        attention in the tech world.
+
+        The idea behind Final-ly was to
+        provide a more modern and affordable
+        approach to funeral services, which can
+        often be expensive and emotionally draining
+        for families. The company offered a range of
+        services, from direct cremation to traditional
+        funerals, and used technology to streamline the
+        process and reduce costs. Despite its initial
+        promise, Final-ly struggled to gain traction
+        in a crowded market. The company faced intense
+        competition from established players in the funeral
+        industry, who were quick to adapt to changing consumer
+        preferences. In addition, the COVID-19 pandemic caused
+        significant disruptions to the funeral industry, making
+        it even more challenging for Final-ly to succeed.
+        In a statement, Final-ly CEO John Smith expressed
+        disappointment at the company's failure, but
+        emphasized the positive impact it had on the
+        industry. "We may not have succeeded in our
+        mission to disrupt the funeral industry, but
+        we are proud of the innovations we brought to
+        the market and the conversations we started
+        about the need for change," he said.
+    
+    </article>
+
+    
+        <img id='onepageimg' src="../melindaunsplash.webp" alt="Bankruptcy Image">
+        
+        In a statement, Final-ly CEO John Smith expressed
+        disappointment at the company's failure, but
+        emphasized the positive impact it had on the
+        industry. "We may not have succeeded in our
+        mission to disrupt the funeral industry, but
+        we are proud of the innovations we brought to
+        the market and the conversations we started
+        about the need for change," he said.
+    
+    
+    </div>
+    <script src="../scripts/nav.js"></script>
+  
+  </body>
+</html>

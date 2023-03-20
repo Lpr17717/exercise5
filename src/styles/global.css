@@ -3,15 +3,15 @@
 }
 @font-face {
   font-family: 'myfont1';
-  src: url(imgspro2/Signika_Negative/SignikaNegative-VariableFont_wght.ttf)
+  src: url(Signika_Negative/SignikaNegative-VariableFont_wght.ttf)
 }
 @font-face {
 font-family: 'myfont2';
-src: url(imgspro2/Signika_Negative/SignikaNegative-Bold.ttf)
+src: url(Signika_Negative/SignikaNegative-Bold.ttf)
 }
 @font-face {
 font-family: 'myfont3';
-src: url(imgspro2/Signika_Negative/SignikaNegative-Regular.ttf)
+src: url(Signika_Negative/SignikaNegative-Regular.ttf)
 }
 img{
   padding: 10px;
@@ -281,7 +281,7 @@ margin: 0;
     padding: 0;
     margin-left: 10px;
     margin-right: 0;
-    width: 200px
+    width: 250px;
   }
 
   button, button:focus{

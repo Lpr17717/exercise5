@@ -1,0 +1,91 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+const pageTitle = "Health";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type ="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content = {Astro.generator} >
+    <title>InterestNews: {pageTitle}</title>
+  </head>
+
+<header class="top-nav">
+
+  <div><a id="logo" href="../index.html"rel="nav"><img src="../InterestNewsLogo.svg" alt="Interest News Logo"></a>
+  </div>
+<button><img id="toggle-nav" src="../menuicon.svg" alt="hamburger"></button>
+<div><a id='logged-in' href="logout.html">Logout</a></div>
+</header>
+
+<body class="">
+
+<div class="search-container"><form action="/action_page.php">
+<input type="text" placeholder="Search.." name="search">
+<button id='search' type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+<Navigation/>
+<div>
+<h1>Comments</h1>
+</div>
+
+<div class="content">
+<a href=`${import.meta.env.BASE_URL}articlepage`>
+<img class="images" src="../melindaunsplash.webp" alt="Bankruptcy Image">
+</a>
+<article>
+<a href=`${import.meta.env.BASE_URL}articlepage`>
+<h2>Business “Final-ly” went bankrupt</h2>
+</a>
+Final-ly, a once-promising startup
+that aimed to disrupt the funeral industry,
+has filed for bankruptcy. The company,
+which launched just three years ago, had raised
+over $10 million in funding and had garnered
+significant attention in the tech world.
+<div><a href=`${import.meta.env.BASE_URL}articlepage`>Read More</a></div>
+</article>
+</div>
+
+  <div id="comments">
+    <div>Username234</div>
+    <div>It's unfortunate to hear
+        about the bankruptcy
+        of Final-ly, a company that
+        was attempting to disrupt
+        the funeral industry by
+        providing more affordable
+        and modern services. The
+        high costs and emotional
+        burden associated with
+        funerals make it a difficult
+        industry to innovate in,
+        especially when there are
+        established players with
+        deep roots in the market.</div>
+        <div>Posted on May 23rd at 5:00pm</div>
+
+        <div>Username234</div>
+    <div>While Final-ly's bankruptcy is a
+        disappointment for its investors
+        and employees, it's important to
+        acknowledge the positive impact
+        the company had on the industry.
+        By starting conversations about
+        the need for change and bringing
+        new innovations to the market,
+        Final-ly may have paved the way
+        for future companies to succeed
+        in disrupting the funeral industry.</div>
+
+        <div>Posted on May 23rd at 7:40pm</div>
+        
+  </div>
+  <script src="../scripts/nav.js"></script>
+  
+</body>
+</html>

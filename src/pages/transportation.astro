@@ -1,0 +1,74 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+const pageTitle = "Transportation";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type ="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content = {Astro.generator} >
+    <title>InterestNews: {pageTitle}</title>
+  </head>
+
+<header class="top-nav">
+ 
+      <div><a id="logo" href="index.html"rel="nav"><img src="../InterestNewsLogo.svg" alt="Interest News Logo"></a>
+      </div>
+      <button><img id="toggle-nav" src="../menuicon.svg" alt="hamburger"></button>
+      <div><a id='logged-in' href="logout.html">Logout</a></div>
+    </header>
+  <body class="">
+
+    <div class="search-container"><form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+  <Navigation/>
+  <div>
+  <h1>Featured Transportation</h1>
+  </div>
+  <div class="content">
+    <a href=`${import.meta.env.BASE_URL}articlepage`>
+    <img class="images" src="../surjaunsplash.webp" alt="School Bus in Snow Image">
+    </a>
+    <article>
+    <a href=`${import.meta.env.BASE_URL}articlepage`>
+    <h2>3 School Buses block roadway due to snow</h2>
+    </a>
+    Three school buses were found
+    blocking a roadway today in a
+    residential area due to heavy snowfall.
+    The buses were heading to a local
+    school when they became stuck in a snowdrift,
+    blocking the entire road.
+    <div><a href=`${import.meta.env.BASE_URL}articlepage`>Read More</a></div>
+    </article>
+    </div>
+    
+    <div class="content">
+      <a href=`${import.meta.env.BASE_URL}articlepage`>
+      <img class="images" src="../egorunsplash.webp" alt="Car in Snow Image">
+      </a>
+      <article>
+      <a href=`${import.meta.env.BASE_URL}articlepage`>
+      <h2>Snow has caused 3 crashes this morning</h2>
+      </a>
+      Heavy snowfall has caused
+      chaos on the roads, with
+      three separate crashes reported
+      in the past few hours. The first
+      crash involved two vehicles
+      colliding on a major highway,
+      causing traffic to come to a standstill.
+      <div><a href=`${import.meta.env.BASE_URL}articlepage`>Read More</a></div>
+      </article>
+      </div>
+
+      <script src="../scripts/nav.js"></script>
+
+  </body>
+</html>
